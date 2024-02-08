@@ -1,0 +1,32 @@
+<div>
+    <h2>List of products using Property Binding</h2>
+</div>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Stock</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr *ngFor="let product of items; let i=index">
+                <td id="name{{i+1}}">{{product.name}}</td>
+                <td id="price{{i+1}}">${{product.price}}</td>
+                <td><img src="{{product.imageUrl}}" id="img{{i+1}}" alt="image{{i+1}}" height="100" width="100"></td>
+                <td id="stock{{i+1}}">{{product.stock}}</td>
+                <td>
+                    <button [id]="product.stock === 0 ? 'disabled' : 'buy' + (i+1)" [disabled]="product.stock === 0">
+                        {{ product.stock === 0 ? 'Disabled' : 'Buy' }}
+                    </button>
+                </td>
+               
+            </tr>
+           
+        </tbody>
+    </table>
+</div>

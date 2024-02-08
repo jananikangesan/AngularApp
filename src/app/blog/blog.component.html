@@ -1,0 +1,10 @@
+<div>
+    <h1>Blog Site</h1>
+</div>
+<div *ngFor="let item of questionList">
+    <div>
+      <div id="question{{item.id}}"> {{item.question}}</div>
+      <div id="answer{{item.id}}"> {{item.answer}}</div>
+    </div>
+    <br>
+</div>

@@ -1,0 +1,13 @@
+h2{
+    color: green;
+}
+table,th,td{
+    border: 1px solid white;
+    background: gainsboro;
+}
+button{
+    background: rgb(82, 157, 203);
+} 
+button[disabled] {
+    color: white;
+}  
