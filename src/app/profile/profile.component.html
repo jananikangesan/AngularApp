@@ -1,0 +1,33 @@
+<div class="body">
+
+    <h1 id="heading">Profile Pic Styling</h1>
+
+
+    <form #myForm="ngForm" (ngSubmit)="myFunction(myForm.value)">
+      <div>
+        <select name="edge"  id="edge"  ngModel>
+          <option value="pro-pic-bordered">Rounded Edge</option>
+          <option value="pro-pic-sharp">Sharp Edge</option>  
+        </select>
+      </div>
+      <br>
+      <div>
+        <select name="size" id="size"  ngModel>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <button id="apply-style">Apply style</button>
+      </div> 
+    </form>
+ 
+  <div id="image" [ngClass]="edge" >
+        <img src="../assets/images/ProPic.jpg" alt="profile" [ngClass]="size">
+  </div>
+</div>
+
+  
+  
