@@ -22,4 +22,29 @@
 
 <app-blog></app-blog> -->
 <!-- <app-product-details></app-product-details> -->
-<app-profile></app-profile>
+<!-- <app-profile></app-profile> -->
+
+
+<div>
+    <table id="userList">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Question</th>
+                <th>Answer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userDetail">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.data?.question || ''}}</td>
+                <td>{{user.data?.answer || ''}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>

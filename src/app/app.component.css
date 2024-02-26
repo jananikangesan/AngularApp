@@ -1,3 +1,23 @@
 h2{
     color: green;
 }
+#userList {
+    margin:20px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 90%; 
+  padding: 10px; 
+}
+td{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#4288fd;
+    color: white;
+    border: 1px solid #4288fd;
+  }
