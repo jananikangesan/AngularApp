@@ -21,9 +21,9 @@ export class AppComponent {
   //   this.likes=27;
   // }
 
-  userDetail:Array<User>=[];
+  //userDetail:Array<User>=[];
   //userDetail: User[] = [];
-  constructor(){
-    this.userDetail=userList;
-  }
+  //constructor(){
+   // this.userDetail=userList;
+ // }
 }
